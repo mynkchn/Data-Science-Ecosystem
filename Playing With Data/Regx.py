@@ -29,3 +29,9 @@ list = re.split(r'\s', statement)
 
 # Print the list of words in the statement. Each word is a separate element in the list.
 print(list)
+
+# Use re.findall() to find all non-digit characters in the statement. '\D' matches any character that is NOT a digit.
+finding = re.findall(r'\D', statement)
+
+# Print the list of non-digit characters found in the statement.
+print(finding)
