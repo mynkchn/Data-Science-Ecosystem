@@ -1,0 +1,9 @@
+cuisine,dish,rice,chicken,spices,onion,garlic,tomato,cheese
+indian,Butter Chicken,1,1,1,1,1,1,0
+italian,Pasta Alfredo,0,0,1,0,1,0,1
+mexican,Tacos,0,1,1,1,1,1,0
+japanese,Sushi,1,0,0,0,0,0,0
+french,Quiche,0,0,0,1,1,0,1
+chinese,Fried Rice,1,0,1,1,1,1,0
+lebanese,Hummus,0,0,1,0,1,0,0
+thai,Pad Thai,1,0,1,1,1,1,0
