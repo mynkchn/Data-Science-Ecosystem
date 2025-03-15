@@ -11,12 +11,16 @@ class TextAnalyzer:
     def feqAll(self):
         words = self.text.split()  # Split into words
         self.word_count = {word: words.count(word) for word in set(words)}  # Count frequency
+        # check={}
+        # for word in words:
+        #     check[word]=words.count(word)
+            
         return self.word_count
 
     def feqOf(self, word):
         if not self.word_count:  # Ensure word_count is populated
             self.feqAll()
-        return self.word_count.get(word, 0)  # Return frequency of the word
+        return self.word_count[word]  # Return frequency of the word
 
 # Example usage:
 givenstring = "Lorem ipsum dolor! diam amet, consetetur Lorem magna. sed diam nonumy eirmod tempor. diam et labore? et diam magna. et diam amet."
