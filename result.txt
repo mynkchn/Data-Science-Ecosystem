@@ -1,0 +1,7 @@
+'The' 2
+'cat' 2
+'chased' 1
+'the' 1
+'mouse.' 1
+'was' 1
+'fast.' 1
