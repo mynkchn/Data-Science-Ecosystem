@@ -1,0 +1,12 @@
+import json
+import requests
+import pandas as pd
+data = requests.get("https://web.archive.org/web/20240929211114/https://fruityvice.com/api/fruit/all")
+results=json.loads(data.text)
+pd.DataFrame(results)
+df=pd.json_normalize(results)
+# print(df)
+cherry=df.loc[df['name']=='Cherry']
+print(cherry[['family','genus']])
+banana=df.loc[df['name']=='Banana']
+print(banana)
